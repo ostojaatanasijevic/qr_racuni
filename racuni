@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd ~/qr_racuni 
+diff /var/log/nginx/access.log access.log > novi_kodovi
+python novi_kodovi.py >> output_novi_kodovi
+cp /var/log/nginx/access.log .
+
